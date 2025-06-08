@@ -1,0 +1,228 @@
+[
+  {
+    "ContainingType": "playlist_pilot.Controllers.ArtistController",
+    "Method": "CreateArtist",
+    "RelativePath": "api/Artist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistDto",
+        "Type": "playlist_pilot.DTOs.ArtistDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.ArtistController",
+    "Method": "GetArtists",
+    "RelativePath": "api/Artist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.ArtistController",
+    "Method": "UpdateArtist",
+    "RelativePath": "api/Artist/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artistDto",
+        "Type": "playlist_pilot.DTOs.ArtistDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.ArtistController",
+    "Method": "DeleteArtist",
+    "RelativePath": "api/Artist/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.PlaylistController",
+    "Method": "CreatePlaylist",
+    "RelativePath": "api/Playlist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playlistDto",
+        "Type": "playlist_pilot.DTOs.PlaylistDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.PlaylistController",
+    "Method": "GetPlaylists",
+    "RelativePath": "api/Playlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.PlaylistController",
+    "Method": "UpdatePlaylist",
+    "RelativePath": "api/Playlist/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "playlistDto",
+        "Type": "playlist_pilot.DTOs.PlaylistDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.PlaylistController",
+    "Method": "DeletePlaylist",
+    "RelativePath": "api/Playlist/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.SongController",
+    "Method": "CreateSong",
+    "RelativePath": "api/Song",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songDto",
+        "Type": "playlist_pilot.DTOs.SongDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.SongController",
+    "Method": "GetSongs",
+    "RelativePath": "api/Song",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.SongController",
+    "Method": "UpdateSong",
+    "RelativePath": "api/Song/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "songDto",
+        "Type": "playlist_pilot.DTOs.SongDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.SongController",
+    "Method": "DeleteSong",
+    "RelativePath": "api/Song/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.SongController",
+    "Method": "GetSongsByArtist",
+    "RelativePath": "api/Song/artist/{artistId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artistId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "playlist_pilot.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[playlist_pilot.WeatherForecast, playlist-pilot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
