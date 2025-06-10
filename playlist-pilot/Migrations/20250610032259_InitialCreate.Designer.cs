@@ -11,7 +11,7 @@ using playlist_pilot.Data;
 namespace playlist_pilot.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250608225323_InitialCreate")]
+    [Migration("20250610032259_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

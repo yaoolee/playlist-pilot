@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("playlist-pilot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+642e63a09b4a3b9b0de13fbc9ebfc6cb538c8793")]
 [assembly: System.Reflection.AssemblyProductAttribute("playlist-pilot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("playlist-pilot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

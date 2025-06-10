@@ -6,6 +6,16 @@
   },
   "paths": {
     "/api/Artist": {
+      "get": {
+        "tags": [
+          "Artist"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Artist"
@@ -14,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             }
           }
@@ -34,10 +44,23 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Artist/Find/{id}": {
       "get": {
         "tags": [
           "Artist"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -66,17 +89,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ArtistDTO"
+                "$ref": "#/components/schemas/ArtistDto"
               }
             }
           }
@@ -110,6 +133,16 @@
       }
     },
     "/api/Playlist": {
+      "get": {
+        "tags": [
+          "Playlist"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Playlist"
@@ -118,17 +151,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             }
           }
@@ -138,10 +171,23 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Playlist/Find/{id}": {
       "get": {
         "tags": [
           "Playlist"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -170,17 +216,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PlaylistDTO"
+                "$ref": "#/components/schemas/PlaylistDto"
               }
             }
           }
@@ -214,35 +260,6 @@
       }
     },
     "/api/Song": {
-      "post": {
-        "tags": [
-          "Song"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "get": {
         "tags": [
           "Song"
@@ -252,10 +269,39 @@
             "description": "OK"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Song"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SongDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SongDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SongDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Song/{id}": {
-      "put": {
+      "get": {
         "tags": [
           "Song"
         ],
@@ -270,25 +316,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SongDTO"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -317,7 +344,7 @@
         }
       }
     },
-    "/api/Song/artist/{artistId}": {
+    "/api/Song/ByArtist/{artistId}": {
       "get": {
         "tags": [
           "Song"
@@ -382,7 +409,7 @@
   },
   "components": {
     "schemas": {
-      "ArtistDTO": {
+      "ArtistDto": {
         "type": "object",
         "properties": {
           "artistId": {
@@ -396,7 +423,7 @@
         },
         "additionalProperties": false
       },
-      "PlaylistDTO": {
+      "PlaylistDto": {
         "type": "object",
         "properties": {
           "playlistId": {
@@ -418,7 +445,7 @@
         },
         "additionalProperties": false
       },
-      "SongDTO": {
+      "SongDto": {
         "type": "object",
         "properties": {
           "songId": {

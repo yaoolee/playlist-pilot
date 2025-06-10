@@ -6,10 +6,10 @@
         public string Title { get; set; }
         public int DurationInSeconds { get; set; }
 
-        // Foreign key
         public int ArtistId { get; set; }
         public Artist Artist { get; set; }
 
         public ICollection<PlaylistSong> PlaylistSongs { get; set; } = new List<PlaylistSong>();
+
     }
 }
