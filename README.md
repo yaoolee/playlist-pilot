@@ -27,7 +27,7 @@
 ```plaintext
 Artist (1) ────< Song (Many)
 Song   (Many) ────< PlaylistSong >──── Playlist (Many)
-
+```
 ---
 
 ## 🚀 Getting Started
@@ -36,10 +36,11 @@ Song   (Many) ────< PlaylistSong >──── Playlist (Many)
 ```bash
 git clone https://github.com/YOUR_USERNAME/playlist-pilot.git
 cd playlist-pilot
+```
 ### 2️⃣ Setup Connection String
 ### 3️⃣ Run Migrations
 ### 4️⃣ Launch the App
-```
+
 ---
 
 ## Learning Objectives
