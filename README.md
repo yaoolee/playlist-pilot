@@ -29,6 +29,7 @@ Artist (1) ────< Song (Many)
 Song   (Many) ────< PlaylistSong >──── Playlist (Many)
 
 ---
+
 ## 🚀 Getting Started
 ### 1️⃣ Clone the Repository
 
@@ -40,6 +41,7 @@ cd playlist-pilot
 ### 4️⃣ Launch the App
 
 ---
+
 ## Learning Objectives
 - ✅ Code-First database modeling with EF Core
 - 📐 How to define 1:M and M:N relationships
