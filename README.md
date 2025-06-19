@@ -39,7 +39,7 @@ cd playlist-pilot
 ### 2️⃣ Setup Connection String
 ### 3️⃣ Run Migrations
 ### 4️⃣ Launch the App
-
+```
 ---
 
 ## Learning Objectives
