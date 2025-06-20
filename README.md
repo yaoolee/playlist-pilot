@@ -34,7 +34,7 @@ Song   (Many) ────< PlaylistSong >──── Playlist (Many)
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/playlist-pilot.git
+git clone https://github.com/yaoolee/playlist-pilot.git
 cd playlist-pilot
 ```
 ### 2️⃣ Setup Connection String
